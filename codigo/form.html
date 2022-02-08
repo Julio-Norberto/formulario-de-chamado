@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="./estilo/formstyle.css">
+</head>
+<body>
+    <img class="wave" src="./imagens/waveblue.png">
+    <div class="container">
+        <div class="img">
+            <img src="./imagens/bgblue.png" alt="bv">
+        </div>
+    </div>
+    <div class="box">
+        <form action="">
+            <fieldset>
+                <legend id="Strong">Formulário de chamado</legend>
+                <br>
+                <div class="inputBox">
+                    <input type="text" name="nome" id="nome" class="inputuser" required>
+                    <label for="nome" class="inlabel">Nome</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="text" name="local" id="local" class="inputuser" required>
+                    <label for="local" class="inlabel">Local do chamado</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="text" name="room" id="room" class="inputuser" required>
+                    <label for="room" class="inlabel">Nome da sala</label>
+                </div>
+                <br><br>
+                <p>Urgência:</p>
+                <input type="radio" id="alta" name="urgencia" value="Alta" required>
+                <label for="alta">Alta</label>
+                <br>
+                <input type="radio" id="media" name="urgencia" value="media" required>
+                <label for="media">Média</label>
+                <br>
+                <input type="radio" id="baixa" name="urgencia" value="baixa" required>
+                <label for="baixa">Baixa</label>
+                <br><br><br>
+                <div class="inputBox">
+                    <input type="text" id="city" name="city" class="inputuser" required>
+                    <label for="city" class="inlabel">Cidade</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="text" name="problem" id="problem" class="inputuser" required>
+                    <label for="problem" class="inlabel">Descreva o problema</label>
+                </div>
+                <br><br>
+                <input type="submit" name="submit" id="submit" onclick="clicar()">
+            </fieldset>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
